@@ -2,12 +2,18 @@ Package: rotsurpackage
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Rotana",
+           family = "Radwan",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "radwanr@vcu.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package contains 4 functions.
+    A function named read.now to import the .csv formatted datasets.
+    A function named journaltable which produces a data summary table for 
+    catergorical and continuous variables. A fucntion named assess.normality 
+    that produces a visual output of a histogram to assess the distribution 
+    of continous variables. A function named building model that conducts a 
+    logistic regression and outputs a data summary of results.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
