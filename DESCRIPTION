@@ -17,8 +17,7 @@ Description: This package contains 4 functions:
     that produce best fit model.
     -summary_finalmodel function conducts a multiple
     logistic regression and outputs a data summary of its results.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
