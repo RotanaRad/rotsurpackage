@@ -1,5 +1,4 @@
-# Create a function called assess.normality
-#' Title
+#' create a customized histogram figure
 #'
 #' @param x 	a vector of values for which the histogram is desired
 #' @param ...
@@ -11,14 +10,12 @@
 #'a function to compute the number of cells.
 #'
 #' @return
-#' @export
-#'
-#' @examples
-#' data(faithful)
-#'assess.normality (eruptions, main = "Old Faithful data")
+#' @export a histogram figure
+#' @examples data(faithful)
+#' assess_normality(x=faithful$eruptions, main = "Old Faithful data")
 
 
-assess.normality <- function(x, ...) {
+assess_normality <- function(x,...) {
   # Create a customized histogram
   hist(x,
        col = gray (.5, .2),
@@ -27,3 +24,4 @@ assess.normality <- function(x, ...) {
        ylab = "",
        ...)
 }
+
