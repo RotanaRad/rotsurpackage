@@ -7,13 +7,16 @@ Authors@R:
            role = c("aut", "cre"),
            email = "radwanr@vcu.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This package contains 4 functions.
-    A function named read.now to import the .csv formatted datasets.
-    A function named journaltable which produces a data summary table for 
-    catergorical and continuous variables. A fucntion named assess.normality 
-    that produces a visual output of a histogram to assess the distribution 
-    of continous variables. A function named building model that conducts a 
-    logistic regression and outputs a data summary of results.
+Description: This package contains 4 functions:
+    -download_data function to import the .csv dataset from Github.
+    -assess_normality function produces a customized visual output of 
+    a histogram to assess the distribution of continous variables.
+    - create_journaltable produces a customized data summary table for 
+    catergorical and continuous variables with journal article asthetics. 
+    -stepwise_selection function conducts a forward selction method of predictors
+    that produce best fit model.
+    -summary_finalmodel function conducts a multiple
+    logistic regression and outputs a data summary of its results.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
