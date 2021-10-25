@@ -16,5 +16,6 @@ A tibble with variable names, type, and observations
 Download and read in public data set file from github's website
 }
 \examples{
-download.data(urlfile='https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv')
+download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv")
+
 }

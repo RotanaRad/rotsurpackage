@@ -2,7 +2,7 @@
 % Please edit documentation in R/stepwise_selection_function.r
 \name{stepwise_selection}
 \alias{stepwise_selection}
-\title{Select predicotor that create best fit model using forward selection methods}
+\title{Select predictor that create best fit model using forward selection methods}
 \usage{
 stepwise_selection(data, formula)
 }
@@ -12,12 +12,12 @@ stepwise_selection(data, formula)
 \item{formula}{specify dependent and dependent variables for glm formula}
 }
 \value{
-a  list of candidiate variables, list of added variables, and stepwise
+a  list of candidate variables, list of added variables, and stepwise
 summary table
 }
 \description{
-Select predicotor that create best fit model using forward selection methods
+Select predictor that create best fit model using forward selection methods
 }
 \examples{
-stepwise_selection(trial, response~.)
+stepwise_selection(data = ToothGrowth, supp ~ .)
 }

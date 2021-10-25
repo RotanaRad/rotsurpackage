@@ -7,14 +7,9 @@
 #' @return summaries of the results of various model fitting functions.
 #' @export
 #'
-#' @examples summary_finalmodel(trial,(substitute(response~age+factor(death))))
-
-summary_finalmodel<-function (data, formula){
-  final.model<-glm(formula, data, family = binomial(logit))
-  model_summary<-summary(final.model)
+#' @examples summary_finalmodel(data = gtsummary::trial, (substitute(response ~ age + factor(death))))
+summary_finalmodel <- function(data, formula) {
+  final.model <- stats::glm(formula, data, family = stats::binomial(logit))
+  model_summary <- summary(final.model)
   return(model_summary)
 }
-
-
-
-

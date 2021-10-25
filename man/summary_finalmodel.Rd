@@ -18,5 +18,5 @@ summaries of the results of various model fitting functions.
 Create a summary table with results of a glm model
 }
 \examples{
-summary_finalmodel(trial,(substitute(response~age+factor(death))))
+summary_finalmodel(data = gtsummary::trial, (substitute(response ~ age + factor(death))))
 }

@@ -6,7 +6,7 @@ Authors@R:
            family = "Radwan",
            role = c("aut", "cre"),
            email = "radwanr@vcu.edu",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0003-0061-0637"))
 Description: This package contains 4 functions:
     -download_data function to import the .csv dataset from Github.
     -assess_normality function produces a customized visual output of 
@@ -24,6 +24,14 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
     blorr,
+    graphics,
+    grDevices,
     gtsummary,
     magrittr,
-    reader
+    reader,
+    stats,
+    utils
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

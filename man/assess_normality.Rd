@@ -13,16 +13,16 @@ assess_normality(x, ...)
 a vector giving the breakpoints between histogram cells,
 a function to compute the vector of breakpoints,
 a single number giving the number of cells for the histogram,
-a character string naming an algorithm to compute the number of cells (see ‘Details’),
+a character string naming an algorithm to compute the number of cells,
 a function to compute the number of cells.}
 }
 \value{
-
+a histogram figure
 }
 \description{
 create a customized histogram figure
 }
 \examples{
 data(faithful)
-assess_normality(x=faithful$eruptions, main = "Old Faithful data")
+assess_normality(x = faithful$eruptions, main = "Old Faithful data")
 }
