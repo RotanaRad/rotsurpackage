@@ -1,8 +1,8 @@
-#' Download and read in public data set file from github's website
+#' Read in public data set URL file from github's website
 #'
-#' @param urlfile  github repository link where the CSV file of dataset
+#' @param urlfile  github repository link where the CSV file of dataset is located
 #'
-#' @return A tibble with variable names, type, and observations
+#' @return output list of variable names, type, and observations
 #' @export
 #'
 #' @examples
