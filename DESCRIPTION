@@ -17,6 +17,7 @@ Description: This package contains 4 functions:
     that produce best fit model.
     -summary_finalmodel function conducts a multiple
     logistic regression and outputs a data summary of its results.
+    The pakcage's function is flexible to work with otherdatasets. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
