@@ -9,7 +9,7 @@ create_journaltable(data, y)
 \arguments{
 \item{data}{A data frame}
 
-\item{y}{}
+\item{y}{categorical variable name in the data.}
 }
 \description{
 Create a customized summary table

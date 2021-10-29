@@ -1,4 +1,4 @@
-#' create a customized histogram figure
+#' Create a customized histogram figure
 #'
 #' @param x 	a vector of values for which the histogram is desired
 #' @param ...

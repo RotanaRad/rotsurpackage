@@ -9,7 +9,7 @@ summary_finalmodel(data, formula)
 \arguments{
 \item{data}{a data frame}
 
-\item{formula}{specify dependent and dependent variables for glm formula}
+\item{formula}{specify dependent and independent variables for glm formula}
 }
 \value{
 summaries of the results of various model fitting functions.

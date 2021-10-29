@@ -22,6 +22,8 @@ library(rotsurpackage)
 
 This vignette is an introduction to the rotsurpackage. This package is used with the main goal of conducting a multiple logistic regression. The package includes each step of a typical data analysis, including: assessing data distribution of continuous variables, summarizing data using descriptive statistics and uni-variate tests, conducting a forward step-wise section of predictors, and performing the multiple logistic regression and outputting results.
 
+The functions in this package are flexible to be used with other types of data-sets.
+
 For this vignette the examples will be using the glow.data a publicly available data set.
 
 ## **1.1. download_data function**
@@ -32,7 +34,7 @@ download_data(urlfile=)
 
 ### Description
 
-This functions allows us to read in a public data set file from github's website. The URLfile is where the user would add the github repository link at which where the CSV file of the data set is located. It would return a tibble with variable names, type, and observations.
+This functions allows us to read in a public data set file from website. In this example, the URL file is where the user would add the github repository link where the CSV file of the data-set is located. It would return a tibble with variable names, type, and observations.
 
 ### Example
 
@@ -46,14 +48,13 @@ To continue using the data set for the rest of this example. We will create a pa
 ```{r}
 #
 glow.data<-download_data(urlfile='https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv')
-glow.data1<-download_data(urlfile='https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW_new.csv')
 ```
 
 ## **1.2. assess_normality function**
 
 ### Syntax
 
-assess.normality (x, ...)
+assess_normality (x, ...)
 
 ### Description
 
@@ -75,12 +76,12 @@ create_journaltable(data,y)
 
 ### Description
 
-This function creates a customized summary table with journal article aesthetics The data is where the user specifies the data frame of interest. The y would be to specify a categorical variable name (quoted or unquoted) in the data. The summary statistic of this categorical variable will be calculated separately for each level of the variable.The output will include an image of summary table with journal article aesthetic for all variables in data set.
+This function creates a customized summary table with journal article aesthetics The data is where the user specifies the data frame of interest. The y would be to specify a categorical variable name in the data. The summary statistic of this categorical variable will be calculated separately for each level of the variable.The output will include an image of summary table with journal article aesthetic for all variables in data-set.
 
 ### Example
 
 ```{r}
-create_journaltable(data=glow.data1,y = 'FRACTURE')
+create_journaltable(data=glow.data,y = 'FRACTURE')
 
 ```
 
@@ -92,7 +93,7 @@ stepwise_selection(data, formula)
 
 ### Description
 
-The function Select predictor that create best fit model using forward selection methods. The data is where users would specify the data frame of interest. The formula would be where users would specify dependent and dependent variables for glm formula (e.g., y\~(x1+x2+x3)). Running the function would return a list of candidate variables, list of added variables, and stepwise summary table. This function requires having the blorr package intsalled allong with rotsurpackage.
+The function will select predictors that lead to the best fit model using forward selection methods. Predictors will enter the model at a significance level of 0.05. The data is where users would specify the data frame of interest. The formula would be where users would specify dependent and independent variables for glm formula (e.g., y\~(x1+x2+x3)). Running the function would return a list of candidate variables, list of added variables, and a step-wise summary table that shows changes in AIC.
 
 ### Example
 
@@ -108,7 +109,7 @@ summary_finalmodel(data, formula)
 
 ### Description
 
-The function create a summary table with results of a glm model. The data is where users would specify the data frame of interest. The formula is where the user would specify the dependent and dependent variables for glm formula. In other words, it is an object of class "formula" which is a symbolic description of the model to be fitted. Once the function is run, it would return a print summary of the glm results.
+The function create a summary table with results of a glm model. The data is where users would specify the data frame of interest. The formula is where the user would specify the dependent and independent variables for glm formula. In other words, it is an object of class "formula" which is a symbolic description of the model to be fitted. Once the function is run, it would return a summary of the glm results.
 
 ### Example
 

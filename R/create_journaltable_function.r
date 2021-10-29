@@ -1,7 +1,7 @@
 #' Create a customized summary table
 #'
 #' @param data A data frame
-#' @param y
+#' @param y  categorical variable name in the data.
 #'
 #' @returnA categorical variable name (quoted or unquoted) in data.
 #'  Summary statistics will be calculated separately for each level of the variable

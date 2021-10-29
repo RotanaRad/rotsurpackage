@@ -1,7 +1,7 @@
 #' Select predictor that create best fit model using forward selection methods
 #'
 #' @param data a data frame
-#' @param formula specify dependent and dependent variables for glm formula
+#' @param formula specify dependent and independent variables for glm formula
 #'
 #' @return a  list of candidate variables, list of added variables, and stepwise
 #' summary table

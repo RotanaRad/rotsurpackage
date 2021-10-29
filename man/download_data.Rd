@@ -7,7 +7,7 @@
 download_data(urlfile)
 }
 \arguments{
-\item{urlfile}{github repository link where the CSV file of dataset is located}
+\item{urlfile}{link where the CSV file of dataset is located}
 }
 \value{
 output list of variable names, type, and observations
@@ -16,6 +16,6 @@ output list of variable names, type, and observations
 Read in public data set URL file from github's website
 }
 \examples{
-download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW_new.csv")
+download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv")
 
 }

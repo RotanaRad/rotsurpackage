@@ -2,7 +2,7 @@
 #' Create a summary table with results of a glm model
 #'
 #' @param data a data frame
-#' @param formula specify dependent and dependent variables for glm formula
+#' @param formula specify dependent and independent variables for glm formula
 #'
 #' @return summaries of the results of various model fitting functions.
 #' @export

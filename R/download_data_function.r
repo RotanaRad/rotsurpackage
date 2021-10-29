@@ -1,6 +1,6 @@
 #' Read in public data set URL file from github's website
 #'
-#' @param urlfile  github repository link where the CSV file of dataset is located
+#' @param urlfile link where the CSV file of dataset is located
 #'
 #' @return output list of variable names, type, and observations
 #' @export

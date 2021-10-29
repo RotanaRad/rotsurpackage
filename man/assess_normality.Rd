@@ -2,7 +2,7 @@
 % Please edit documentation in R/assess_normality_function.r
 \name{assess_normality}
 \alias{assess_normality}
-\title{create a customized histogram figure}
+\title{Create a customized histogram figure}
 \usage{
 assess_normality(x, ...)
 }
@@ -20,7 +20,7 @@ a function to compute the number of cells.}
 a histogram figure
 }
 \description{
-create a customized histogram figure
+Create a customized histogram figure
 }
 \examples{
 data(faithful)

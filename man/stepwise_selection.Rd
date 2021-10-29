@@ -9,7 +9,7 @@ stepwise_selection(data, formula)
 \arguments{
 \item{data}{a data frame}
 
-\item{formula}{specify dependent and dependent variables for glm formula}
+\item{formula}{specify dependent and independent variables for glm formula}
 }
 \value{
 a  list of candidate variables, list of added variables, and stepwise
