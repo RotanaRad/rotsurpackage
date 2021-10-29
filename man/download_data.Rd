@@ -2,20 +2,20 @@
 % Please edit documentation in R/download_data_function.r
 \name{download_data}
 \alias{download_data}
-\title{Download and read in public data set file from github's website}
+\title{Read in public data set URL file from github's website}
 \usage{
 download_data(urlfile)
 }
 \arguments{
-\item{urlfile}{github repository link where the CSV file of dataset}
+\item{urlfile}{github repository link where the CSV file of dataset is located}
 }
 \value{
-A tibble with variable names, type, and observations
+output list of variable names, type, and observations
 }
 \description{
-Download and read in public data set file from github's website
+Read in public data set URL file from github's website
 }
 \examples{
-download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv")
+download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW_new.csv")
 
 }

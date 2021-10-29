@@ -4,28 +4,16 @@
 \alias{create_journaltable}
 \title{Create a customized summary table}
 \usage{
-create_journaltable(data, y, b, x)
+create_journaltable(data, y)
 }
 \arguments{
 \item{data}{A data frame}
 
-\item{y}{A categorical variable name (quoted or unquoted) in data.
-Summary statistics will be calculated separately for each level of the variable.}
-
-\item{b}{categorical variable/s}
-
-\item{x}{continuous variable/s}
-}
-\value{
-a customized summary table for all variables in data set with journal
-article aesthetics
+\item{y}{}
 }
 \description{
 Create a customized summary table
 }
 \examples{
-\dontrun{
-create_journaltable(data = gtsummary::trial, y = "trt", b = ("death"), x = ("age"))
-}
-
+create_journaltable(data =infert, y = 'case')
 }

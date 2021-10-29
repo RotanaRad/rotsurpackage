@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW.csv")
+#' download_data(urlfile ="https://raw.githubusercontent.com/RotanaRad/rotsurpackage/main/GLOW_new.csv")
 #'
 download_data <- function(urlfile) {
   utils::read.csv(url(urlfile))
